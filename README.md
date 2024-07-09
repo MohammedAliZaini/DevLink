@@ -1,8 +1,4 @@
-## Acebook MERN Template
-
-In this project, you are task with working on an existing application. A
-significant part of the challenge will be to familiarise yourself with the
-codebase you've inherited, as you work to **improve and extend** it.
+## Devlink MERN Template
 
 ### Structure
 
@@ -16,20 +12,13 @@ run separately.
 
 ### Documentation
 
-[More documentation of the codebase and its architecture can be found here.](./DOCUMENTATION.md)
-It's recommended you all read the suggested docs _after making sure the whole
-setup below worked for everyone_. Then work together on a diagram describing how
-the application works.
-
 ### Card wall
 
-REPLACE THIS TEXT WITH A LINK TO YOUR CARD WALL
+https://trello.com/b/qqTJ03Fm/devlink
 
 ### Quickstart
 
 ### Install Node.js
-
-If you haven't already, make sure you have node and NVM installed.
 
 1. Install Node Version Manager (NVM)
    ```
@@ -46,7 +35,7 @@ If you haven't already, make sure you have node and NVM installed.
 ### Set up your project
 
 1. Have one team member fork this repository
-2. Rename the fork to `acebook-<team name>`
+2. Rename the fork to `Devlink-<team name>`
 3. Every team member clone the fork to their local machine
 4. Install dependencies for both the `frontend` and `api` applications:
    ```
@@ -88,7 +77,7 @@ VITE_BACKEND_URL="http://localhost:3000"
 Create a file `api/.env` with the following contents:
 
 ```
-MONGODB_URL="mongodb://0.0.0.0/acebook"
+MONGODB_URL="mongodb://0.0.0.0/devlink"
 NODE_ENV="development"
 JWT_SECRET="secret"
 ```
