@@ -106,7 +106,7 @@ they should then show up in the browser if you refresh the page.
 
 ## Documentation
 
-### Card wall
+### Trello Board
 
 https://trello.com/b/qqTJ03Fm/devlink
 
