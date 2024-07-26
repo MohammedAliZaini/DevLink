@@ -1,4 +1,4 @@
-## Devlink MERN Template
+## DevLink - Where Tinder and Github meet 
 
 ### Structure
 
@@ -10,13 +10,7 @@ This repo contains two applications:
 These two applications will communicate through HTTP requests, and need to be
 run separately.
 
-### Documentation
-
-### Card wall
-
-https://trello.com/b/qqTJ03Fm/devlink
-
-### Quickstart
+## Quickstart
 
 ### Install Node.js
 
@@ -31,7 +25,6 @@ https://trello.com/b/qqTJ03Fm/devlink
    ```
    nvm install 20
    ```
-
 ### Set up your project
 
 1. Have one team member fork this repository
@@ -110,3 +103,13 @@ Then, after signing up, you should be able to log in by going to
 
 After logging in, you won't see much but you can create posts using PostMan and
 they should then show up in the browser if you refresh the page.
+
+## Documentation
+
+### Card wall
+
+https://trello.com/b/qqTJ03Fm/devlink
+
+### Miro Board
+
+https://miro.com/app/board/uXjVK9333mM=/
