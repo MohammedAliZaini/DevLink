@@ -1,115 +1,122 @@
-## DevLink - Where Tinder and Github meet 
+# DevLink - Where Tinder Meets GitHub
 
-### Structure
+**Overview**
 
-This repo contains two applications:
+DevLink is a web application that blends the swiping functionality of Tinder with the collaborative features of GitHub. This repository consists of two main components:
 
-- A frontend React App
-- A backend api server
+- **Frontend** - A React-based application
+- **Backend** - An API server
 
-These two applications will communicate through HTTP requests, and need to be
-run separately.
+These components communicate via HTTP requests and must be run separately.
 
-## Quickstart
+## Project Structure
 
-### Install Node.js
+This repository contains:
 
-1. Install Node Version Manager (NVM)
-   ```
-   brew install nvm
-   ```
-   Then follow the instructions to update your `~/.bash_profile`.
-2. Open a new terminal
-3. Install the latest version of [Node.js](https://nodejs.org/en/), (`20.5.0` at
-   time of writing).
-   ```
-   nvm install 20
-   ```
-### Set up your project
+1. **Frontend**: A React application that serves as the user interface.
+2. **Backend**: An API server that handles data management and business logic.
 
-1. Have one team member fork this repository
-2. Rename the fork to `Devlink-<team name>`
-3. Every team member clone the fork to their local machine
-4. Install dependencies for both the `frontend` and `api` applications:
-   ```
-   cd frontend
-   npm install
-   cd ../api
-   npm install
-   ```
-5. Install an ESLint plugin for your editor, for example
-   [ESLint for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-6. Install MongoDB
-   ```
-   brew tap mongodb/brew
-   brew install mongodb-community@6.0
-   ```
-   _Note:_ If you see a message that says
-   `If you need to have mongodb-community@6.0 first in your PATH, run:`, follow
-   the instruction. Restart your terminal after this.
-7. Start MongoDB
+## Quickstart Guide
 
-   ```
-   brew services start mongodb-community@6.0
-   ```
+### 1. Install Node.js
 
-### Setting up environment variables.
+1. Install Node Version Manager (NVM):
 
-We need to create two `.env` files, one in the frontend and one in the api.
+    ```bash
+    brew install nvm
+    ```
 
-#### Frontend
+    Follow the instructions to update your `~/.bash_profile`. Open a new terminal and install the latest version of Node.js:
 
-Create a file `frontend/.env` with the following contents:
+    ```bash
+    nvm install 20
+    ```
 
-```
-VITE_BACKEND_URL="http://localhost:3000"
-```
+### 2. Set Up the Project
 
-#### Backend
+1. Fork this repository and rename the fork to `Devlink-<team-name>`.
 
-Create a file `api/.env` with the following contents:
+2. Clone the fork to your local machine.
 
-```
-MONGODB_URL="mongodb://0.0.0.0/devlink"
-NODE_ENV="development"
-JWT_SECRET="secret"
-```
+3. Install dependencies for both the frontend and backend applications:
 
-For an explanation of these environment variables, see the documentation.
+    ```bash
+    cd frontend
+    npm install
+    cd ../api
+    npm install
+    ```
 
-### How to run the server and use the app
+4. Install an ESLint plugin for your code editor, such as ESLint for VSCode.
 
-1. Start the server application (in the `api` directory) in dev mode:
+### 3. Install MongoDB
 
-```
-; cd api
-; npm run dev
-```
+1. Install MongoDB using Homebrew:
 
-2. Start the front end application (in the `frontend` directory)
+    ```bash
+    brew tap mongodb/brew
+    brew install mongodb-community@6.0
+    ```
 
-In a new terminal session...
+    If prompted to add MongoDB to your PATH, follow the instructions and restart your terminal.
 
-```
-; cd frontend
-; npm run dev
-```
+2. Start MongoDB:
 
-You should now be able to open your browser and go to
-`http://localhost:5174/signup` to create a new user.
+    ```bash
+    brew services start mongodb-community@6.0
+    ```
 
-Then, after signing up, you should be able to log in by going to
-`http://localhost:5174/login`.
+### 4. Configure Environment Variables
 
-After logging in, you won't see much but you can create posts using PostMan and
-they should then show up in the browser if you refresh the page.
+Create `.env` files in both the frontend and backend directories.
+
+**Frontend:**
+
+Create `frontend/.env` with the following content:
+
+    ```env
+    VITE_BACKEND_URL="http://localhost:3000"
+    ```
+
+**Backend:**
+
+Create `api/.env` with the following content:
+
+    ```env
+    MONGODB_URL="mongodb://0.0.0.0/devlink"
+    NODE_ENV="development"
+    JWT_SECRET="secret"
+    ```
+
+Refer to the documentation for detailed explanations of these environment variables.
+
+### 5. Run the Application
+
+1. Start the backend server (in the `api` directory) in development mode:
+
+    ```bash
+    cd api
+    npm run dev
+    ```
+
+2. Start the frontend application (in the `frontend` directory) in a new terminal session:
+
+    ```bash
+    cd frontend
+    npm run dev
+    ```
+
+3. Open your browser and navigate to `http://localhost:5174/signup` to create a new user.
+
+4. After signing up, you can log in by visiting `http://localhost:5174/login`.
+
+   Note: Post-login, you may not see much initially, but you can use Postman to create posts, which will then appear in the browser upon refreshing the page.
 
 ## Documentation
 
-### Trello Board
+- **[Trello Board](https://trello.com/b/qqTJ03Fm/devlink)**: Project management and task tracking.
+- **[Miro Board](https://miro.com/app/board/uXjVK9333mM=/)**: Project design and wireframes.
 
-https://trello.com/b/qqTJ03Fm/devlink
+---
 
-### Miro Board
-
-https://miro.com/app/board/uXjVK9333mM=/
+**Note:** DevLink is built using the same foundational skeleton as Acebook, leveraging similar technologies to deliver a distinctive blend of functionalities.
